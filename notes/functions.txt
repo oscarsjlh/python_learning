@@ -1,0 +1,10 @@
+Functions snipets of code that can be repeated.
+Can take lists
+  def greet_users(names)
+    for name in names:
+      print(f"hello {name}"
+  usernames = ['hanna', 'ty' 'margot']
+
+Functions can modify the list, that we give to the function.
+
+``

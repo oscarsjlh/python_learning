@@ -1,0 +1,4 @@
+If statements look if a condition is true in code
+  We can check if something is diferent with the if !=
+  Can check multiple conditions
+Can chekc if is in the list.::wq

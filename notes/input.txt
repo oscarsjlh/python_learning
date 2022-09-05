@@ -1,0 +1,7 @@
+Python has the input() to capture user input.
+The input should be clear.
+If the input is more than 1 line you can assign the prompt to a variable and write a clear input statement
+Python reads input as strings even if is text.
+We can assign text to input:
+question = input(some bullshit)
+question = int(questionL)

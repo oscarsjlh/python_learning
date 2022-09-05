@@ -1,0 +1,24 @@
+Lists: A collection of items in a specific order, represented by []
+	list['the fellowship of the ring' 'the two towers' 'return of the king' 'the hobbit' 'the simalirion']
+	print(list)
+		['the fellowship of the ring' 'the two towers' 'return of the king' 'the hobbit' 'the simalirion']
+        print(list[0])
+		'the fellowship of the ring'
+        print(list[0].title)
+		'The Fellowship Of The Ring'
+	Las element of the list can be accesed with -1
+	List start at 0
+	-2 is second to last -3 is third to last
+   	Can be modified
+	
+	list[0]='Children of hurin'
+	print(list)
+		['Children of hurin' 'the two towers' 'return of the king' 'the hobbit' 'the simalirion']
+	We can add more values to the list using the append function:
+	list.append('the fellowship of the ring')
+	You can define the position of where you append values
+	You can delete del list[]
+	pop() deletes the last value of the list
+	you can pop any position by defining it in the parentesis.
+	Remove list.remove('value')
+

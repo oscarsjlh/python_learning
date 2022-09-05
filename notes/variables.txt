@@ -1,0 +1,34 @@
+
+Variables: Boxes where you store values
+   Var typs:
+	Strings: Text anything in "" is considered text.
+	Can be modified with the print comand:
+		name = "oscar aranega"
+		print(name.title()) = Oscar Aranega
+		print(name.upper()) = OSCAR ARANEGA
+		print(name.lower()) = oscar aranega
+	F for formatting, adding and combining two strings together,
+	making the print function much simpler
+	Adding Tabs to modify withespace;
+	\t Acts like :
+		print (\word)
+			word
+	\n Acts like:
+		print (Word \n Words)
+		Word
+		Words
+	Rstrip(): Removes White Space in quotes
+	lstip(): "" in the left
+	\" \" allows you to print text in quotes
+	Integers:
+	 	Real Numbers
+		Can use the arimethic signs in python to perform operations
+	Floats:
+		Decimal numbers
+	If you divide integers:	
+		always gets a float number
+	You can divide integers and floats
+	
+	You can use underescore to make large numbers easy to read;
+
+					

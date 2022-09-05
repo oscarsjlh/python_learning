@@ -1,0 +1,32 @@
+Dictionary are a collection of key value pairs, each key has a vaule.
+  Example
+    alien_0 = {'color': 'green', 'points': 5}
+    print(alien_0['color'])
+    print(alien_0['points'])
+      green
+      5
+
+Dictionary are wrapped in braces separatred by comas.
+They are dynamic structures, can add value key pairs at anny time.
+Dictonaries can be nested inside lists.
+
+alien_0 = {'color': green, 'points': 5}
+alien_2 = {'color': 'yellow', 'points': 10}
+alien_3 = {'color': 'red', 'points': 10}
+
+aliens = [alien_0, alien_2, alien_3]
+
+for alien in aliens:
+  print(alien)
+
+You can nest list in a Dictionary term, and you can nest list in a dictionary term,
+
+#Store information about a pizza ordered:
+  pizza = {
+  'crust': 'tick'
+  'toppings': ['mushroom', 'extra cheese']
+
+    }
+  favorite_languages = { 
+      'jen' :
+    }
