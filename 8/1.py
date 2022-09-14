@@ -1,4 +1,9 @@
-def greet_learner(learner):
-    print(f"{learner} is learnig and getting through the python crash course")
+def display_message(subject):
+    """Display what the user is learning"""
+    message = "He is learning about:"
+    print(f" {message} \n {subject.title()}")
 
-greet_learner('oscar')
+display_message('python')
+display_message('handstands')
+
+

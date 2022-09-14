@@ -1,4 +1,81 @@
 Functions snipets of code that can be repeated.
+Functions make code easier to write read test and fix.
+  Simple function example
+    def greet_user():
+      """display a simple greeting"""
+      print("Hello!")
+    
+    greet_user()
+
+Def is the keyword to define a funtion.
+Then you can call the function with the name of the function and the necessary info in the parentesis.
+Python executes the code inside the function.
+
+You can give the function inputs to accept the values.
+
+def greet_user(username):
+  print(f"Hello, {username.title()}")
+
+greet_user(Oscar)
+
+Returns:
+Hello, Oscar
+
+The information we pass to the function are called parameters.
+
+A function can have multiple parameters, you can call a function with multiple arguments.
+There is a multiple of ways to pass multiple parameter to a function:
+  *Positional arguments
+  *Keyword arguments
+
+Positional argumnets:
+  When calling a function pythn matches each argument in the function call with a parameter in the function
+  Example:
+    def describe_pet(animal_type, pet_name):
+      """Display information about a pet"""
+      print(f"\n I have a {animal_type}.")
+      print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+    describe_pet('Hamster','Harry')
+
+  The definition shows that this function needs a type of animal and the animal name.
+  When we call describe_pet whe need to give that information in that order.
+  Every single time hamester is assigne to animal_type and harry to pet_name.
+
+Functions can be called as many times as we need.
+It allows to writte code once and be able to reuse code.
+
+If you mix the arguments you get unexpected results.
+
+A keyword argument is a name-value pir that you pass to the function.
+You directly associatethe name and the value within the argument so when you pass the argument, there is no confussion.
+Example:
+  def describe_pet(animal_type, pet_name):
+    """Display information about a pet"""
+     print(f"\n I have a {animal_type}.")
+     print(f"My {animal_type}'s name is {pet_name.title()}.")
+  describe_pet(pet_name="harry", animal_type="hamster")
+
+When using keyword arguments make sure they match the function
+
+Default Values:
+  When writing a function you can define a default value for each parameter.
+  example
+  def describe_pet(animal_type='dog', pet_name):
+    """Display information about a pet"""
+     print(f"\n I have a {animal_type}.")
+     print(f"My {animal_type}'s name is {pet_name.title()}.")
+  describe_pet(pet_name="harry", animal_type="hamster")
+
+describe_pet(pet_name='willie')
+
+Now we can describe multtiple dogs without telling python every time we are describing a dog.
+We can still use the animal_type parameter if we don't wanna describe a dog. Python will ignore it if we specify a value.
+
+When using default values, the parameters with a default value should be listed at the end.
+So the positional arguments work properly.
+
+
 Can take lists
   def greet_users(names)
     for name in names:
