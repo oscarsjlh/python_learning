@@ -75,6 +75,67 @@ We can still use the animal_type parameter if we don't wanna describe a dog. Pyt
 When using default values, the parameters with a default value should be listed at the end.
 So the positional arguments work properly.
 
+Functions don't have to always output directly, instead they can process some data and then return a value or a set of values.
+This value returned from a function is called a return value.
+
+Example a function that returns a neatly formatted full name.
+  def get_formatted_name(first_name, last_name)
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+musician = get_formatted_name('jimmy', 'hendrix')
+print(musician)
+
+Sometimes we need to make the arguments in a function optional.
+Sow people can chose to give extra information if they chose to.
+Example if we wanted to expand the last function to use middle name:
+   def get_formatted_name(first_name, middle_name, last_name)
+    full_name = f"{first_name} {middle_name} {last_name}"
+    return full_name.title()
+
+    musician = get_formatted_name('john', 'lee', 'hooker')
+    print(musician)
+
+But middle names aren't always needed,
+So we move middle name to the end and we assign an empty string to it.
+  def get_formatted_name(first_name, last_name, middle_name='')
+    if middle_name:
+      full_name = f"{first_name} {middle_name} {last_name}"
+    
+    else:
+        full_name =f"{first_name} {last_name}"
+    return full_name.title()
+   
+  musician = get_formatted_name('jimi', 'hendrix')
+   print(musician)
+
+   musician = get_formatted_name('john', 'hooker', 'lee')
+   print(musician)
+
+Function can return any kind of value.
+Can return lists and dictionaries.
+
+Example
+  def build_person(first_name last_name):
+    person = {'first': first_name, 'last': last_name}
+    return person
+
+  musician = build_person('jimi','hendrix')
+  print(musician)
+
+Using dictionaries allows us to expand the amount of information we have about a person
+example we can store the age adding age=none
+  def build_person(first_name, last_name, age=None):
+    """Return a dictionary of information about a person."""
+    person = {'first': first_name, 'last': last_name}
+    if age:
+        person['age'] = age
+    return person
+
+musician = build_person('jimi', 'hendrix', age=27)
+print(musician)
+
+We add a parameter with a special value none, to specify that the variable has no value assigned to it.
 
 Can take lists
   def greet_users(names)
