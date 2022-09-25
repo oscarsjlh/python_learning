@@ -28,4 +28,7 @@ class IceCreamStand(Restaurant):
             print(f"-{flavour.title()}")
 
 
-
+big_one = IceCreamStand('The Big One')
+big_one.flavours=['vanilla','chocolate','black cherry']
+big_one.describe_restaurant()
+big_one.show_flavours()

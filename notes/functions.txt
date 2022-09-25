@@ -137,12 +137,81 @@ print(musician)
 
 We add a parameter with a special value none, to specify that the variable has no value assigned to it.
 
-Can take lists
-  def greet_users(names)
+Functions can get a list of names etc. And even dictionaries.
+Example to greet a list of users:
+  def greet_users(names):
+    """Print a simple greeting to each user in the list."""
     for name in names:
-      print(f"hello {name}"
+        msg = f"Hello, {name.title()!}"
+        print(f"hello {name}"
   usernames = ['hanna', 'ty' 'margot']
+  greet_users(usernames)
 
-Functions can modify the list, that we give to the function.
+Functions can modify lists.
+When you pass a list to a function the function can modify the list.
+Any changes mad e to the list inside the funciton body are permanent.
+Allowing you to work efficently even when you're dealing with large amounts of data.
+Consider a company that creates 3d printed models of designs that users sumbit.
+Desings that need to be printed are sotred in a list, and after being printed they're moved to a separate list.
+The following code does this without functions.
 
-``
+  We start with the two list.
+ 
+  unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+  completed_models = []
+
+  simulate every design printed.
+  Move each design to completed_models after print
+  
+  while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    print(f"Printing model: {current_design}")
+    completed_models.append(current_design)
+
+  Show all completed models
+  
+  print("\n The following models have been printed:")
+  for completed_model in completed_models:
+    print(completed_model)
+
+Functions can accept an Arbitrary number of argumnets.
+Sometimes you don't know how many argumnets a function needs to accept.
+For example a function that builds a pizza it needs to accept the number of toppings.
+But you can't know ahead of time how many toppings aperson will want.
+The following function uses the parameter *toppings allows to give multiple arguments.
+
+def make_pizza(*toppings):
+    """Print the list of toppings that have been requested."""
+    print(toppings)
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+The * parameter in toppings creates a tuple called toppings and packs all the values into the tuple.
+We can replace the print with a loop to print the list of toppings.
+
+def make_pizza(*toppings):
+    """Summarize the pizza we are about to make."""
+    print("\nMaking a pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+Mixing Postional and Arbitrary arguments.
+
+  If you want the function to accept diferent kind of arguments, the arbitrary ones should be placed in the end.
+
+Using Arbitrary Keyword Arguments
+
+  You can tell python to accept as many key-value pairs as the calling statement provides.
+  For example building profiles you know you want a first name and last name.
+  But you might get more info than that.
+
+adding **parmameter allows that.
+
+When using that python creates an empty dictionary, that stores the info.
+
+
+
